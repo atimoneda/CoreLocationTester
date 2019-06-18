@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CLTViewController" customModule="CoreLocationTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcz-RO-VwP">
+                                <rect key="frame" x="171" y="622" width="72" height="220"/>
+                                <state key="normal" title="Read Logs"/>
+                                <connections>
+                                    <action selector="readLogs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pkp-M6-PGU"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZWh-U9-30R">
+                                <rect key="frame" x="0.0" y="44" width="414" height="570"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="570" id="ZPR-IY-wFW"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paK-fK-ykY">
+                                <rect key="frame" x="49" y="812" width="82" height="30"/>
+                                <state key="normal" title="Delete Logs"/>
+                                <connections>
+                                    <action selector="deleteLogs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Zv-g1-Vms"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZWh-U9-30R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1pe-3e-oxR"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="bottom" secondItem="xcz-RO-VwP" secondAttribute="bottom" constant="20" id="8fN-Ya-F25"/>
+                            <constraint firstItem="ZWh-U9-30R" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" id="IY1-rB-T7J"/>
+                            <constraint firstItem="xcz-RO-VwP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KFx-2H-eGy"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="bottom" secondItem="paK-fK-ykY" secondAttribute="bottom" constant="20" id="VyW-cF-9oW"/>
+                            <constraint firstItem="xcz-RO-VwP" firstAttribute="top" secondItem="ZWh-U9-30R" secondAttribute="bottom" constant="8" id="cO1-KO-djx"/>
+                            <constraint firstItem="ZWh-U9-30R" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" id="mjd-yb-ZJB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="ZWh-U9-30R" id="nS3-6t-BXQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CoreLocationTester_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" height="67" alignment="left" text="Label" textAlignment="center" numberOfLines="0" minimumScaleFactor="0.5" id="IWi-O0-rLS"/>
+                        <group width="1" alignment="left" id="70J-wd-5MA">
+                            <items>
+                                <button width="0.29999999999999999" alignment="left" title="1m" id="l65-Pr-vJc">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                    <connections>
+                                        <action selector="setDistanceToOne" destination="AgC-eL-Hgc" id="SQ5-6f-A4m"/>
+                                    </connections>
+                                </button>
+                                <button width="0.29999999999999999" alignment="center" title="5m" id="SOr-oi-B0J">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                    <connections>
+                                        <action selector="setDistanceToFive" destination="AgC-eL-Hgc" id="VoL-zi-Rht"/>
+                                    </connections>
+                                </button>
+                                <button width="0.29999999999999999" alignment="right" title="20m" id="gj7-ee-mqC">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                    <connections>
+                                        <action selector="setDistanceToTen" destination="AgC-eL-Hgc" id="31d-WJ-5vq"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group alignment="center" verticalAlignment="bottom" id="37U-6M-jMR">
+                            <items>
+                                <button width="0.5" alignment="left" title="START" id="c2M-HT-72G">
+                                    <connections>
+                                        <action selector="didPressStartButton" destination="AgC-eL-Hgc" id="Jfs-7m-Jds"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="right" title="STOP" id="Wbu-pG-1Tx">
+                                    <connections>
+                                        <action selector="didPressStopButton" destination="AgC-eL-Hgc" id="cNV-m8-vJZ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="FiveButton" destination="SOr-oi-B0J" id="QKr-Rf-SCf"/>
+                        <outlet property="OneButton" destination="l65-Pr-vJc" id="aFx-Iu-uok"/>
+                        <outlet property="TenButton" destination="gj7-ee-mqC" id="QiT-6C-QTt"/>
+                        <outlet property="textLabel" destination="IWi-O0-rLS" id="gWs-Ta-87z"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="31"/>
+        </scene>
+    </scenes>
+</document>
