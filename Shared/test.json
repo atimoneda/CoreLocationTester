@@ -1,0 +1,14 @@
+{
+  "personas": [
+    {
+      "nombre": "Arnau",
+      "apellido": "Timoneda",
+      "id": 1
+    },
+    {
+      "nombre": "Carole",
+      "apellido": "Collier",
+      "id": 2
+    }
+  ]
+}
